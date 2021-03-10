@@ -1,0 +1,166 @@
+.weather-component{
+    list-style-type: none;
+    font-size: 1em;
+
+    padding: 0 15px;
+    margin: 10px 0;
+
+    height: 48px;
+
+    background-color: gray;
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cur-loc__temperature{
+    font-size: 156px;
+    margin-right: 10%;
+    color: honeydew;
+}
+
+.weather-component__title{
+    width: 48%;
+    color: honeydew;
+}
+
+.weather-component__content{
+    width: 48%;
+    text-align: right;
+    color: honeydew;
+}
+
+
+
+.search{
+    width: 50%;
+    text-align: right;
+    display: inline-block;
+    flex: 1 1;
+}
+
+.search-type{
+    background-color: ghostwhite;
+
+    border: black 0.5px solid;
+    border-radius: 5%;
+
+    height: 40px;
+    width: 280px;
+
+    text-align: center;
+}
+
+
+
+.weather-container-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.weather-container-header-left, .weather-container-header-right{
+    height: 100%;
+    width: 50%;
+
+    display: flex;
+    align-items: center;
+}
+
+.weather-container-header-right{
+    justify-content: flex-end;
+}
+
+
+
+.cur-loc-weather-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.weather-container{
+    list-style: none;
+    width: 95%;
+}
+
+
+
+
+.favorites{
+    width: 95%;
+
+    display: flex;
+    align-items: center;
+}
+
+.loc-temp{
+    font-size: 1em;
+    margin-left: 20px;
+
+    color: honeydew;
+}
+
+
+
+
+.ul-list-format{
+    list-style-type: none;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+
+
+@media (min-width: 1000px){
+    .weather-container{
+        width: 45%;
+    }
+}
+
+@media (max-width: 1000px){
+    .favorites{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search{
+        width: 100%;
+        margin-top: 15px;
+        justify-content: space-between;
+        display: flex;
+    }
+
+    .search-type{
+        width: 85%;
+    }
+
+    .loc-temp{
+        font-size: 0.7em;
+    }
+
+    .weather-component{
+        font-size: 0.7em;
+    }
+}
+
+@media (max-width: 650px){
+    .loc-temp{
+        font-size: 0.5em;
+    }
+
+    .weather-component{
+        font-size: 0.5em;
+    }
+}

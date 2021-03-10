@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+
+    <title>WeatherGetter</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/weather.css">
+    <link rel="stylesheet" href="./css/service.css">
+</head>
+
+<body>
+    <header>
+        <h1>Weather</h1>
+        <button class="header-line">
+            <span class="change-loc__mobile">&#8634</span>
+            <span class="change-loc__desktop">Change location</span>
+        </button>
+    </header>
+
+    <main class="flex-container">
+        <section class="weather-container">
+            <h2>Saint-Petersburg</h2>
+            <div class="cur-loc-weather-container">
+                <img src="./res/rainy.svg" alt="logo" class="cur-loc__image">
+                <span class="cur-loc__temperature">8&degC</span>
+            </div>
+        </section>
+
+        <section class="weather-container">
+            <ul>
+                <li class="weather-component">
+                    <span class="weather-component__title">Wind</span>
+                    <span class="weather-component__content">10 km/h</span>
+                </li>
+                <li class="weather-component">
+                    <span class="weather-component__title">Cloudiness</span>
+                    <span class="weather-component__content">High</span>
+                </li>
+                <li class="weather-component">
+                    <span class="weather-component__title">Pressure</span>
+                    <span class="weather-component__content">1030 mbar</span>
+                </li>
+                <li class="weather-component">
+                    <span class="weather-component__title">Humidity</span>
+                    <span class="weather-component__content">56%</span>
+                </li>
+                <li class="weather-component">
+                    <span class="weather-component__title">Coordinates</span>
+                    <span class="weather-component__content">[59.93, 30.18]</span>
+                </li>
+            </ul>
+        </section>
+
+
+
+        <section class="favorites">
+            <h2>Favourites</h2>
+            <form class="search">
+                <input class="search-type" type="search" placeholder="Add a new city">
+                <button class="button">&#10010</button>
+            </form>
+        </section>
+
+
+
+        <ul class="ul-list-format">
+            <li class="weather-container">
+                <div class="weather-container-header">
+                    <div class="weather-container-header-left">
+                        <h3>Samara</h3>
+                        <span class="loc-temp">5&degC</span>
+                    </div>
+                    <div class="weather-container-header-right">
+                        <img class="weather-icon" src="./res/cloudy.svg" alt="logo">
+                        <button class="button close-button">X</button>
+                    </div>
+                </div>
+
+                <ul>
+                    <li class="weather-component">
+                        <span class="weather-component__title">Wind</span>
+                        <span class="weather-component__content">13 km/h</span>
+                    </li>
+                    <li class="weather-component">
+                        <span class="weather-component__title">Cloudiness</span>
+                        <span class="weather-component__content">High</span>
+                    </li>
+                    <li class="weather-component">
+                        <span class="weather-component__title">Pressure</span>
+                        <span class="weather-component__content">1016 mbar</span>
+                    </li>
+                    <li class="weather-component">
+                        <span class="weather-component__title">Humidity</span>
+                        <span class="weather-component__content">	71%</span>
+                    </li>
+                    <li class="weather-component">
+                        <span class="weather-component__title">Coordinates</span>
+                        <span class="weather-component__content">[53.20, 50.15]</span>
+                    </li>
+                </ul>
+            </li>
+
+
+            <li class="weather-container">
+                <div class="weather-container-header">
+                    <div class="weather-container-header-left">
+                        <h3>Volgograd</h3>
+                        <span class="loc-temp">23&degC</span>
+                    </div>
+                    <div class="weather-container-header-right">
+                        <img class="weather-icon" src="./res/rainy.svg" alt="logo">
+                        <button class="button close-button">X</button>
+                    </div>
+                </div>
+
+                <ul>
+                    <li class="weather-component">
+                        <span class="weather-component__title">Wind</span>
+                        <span class="weather-component__content">14 km/h</span>
+                    </li>
+                    <li class="weather-component">
+                        <span class="weather-component__title">Cloudiness</span>
+                        <span class="weather-component__content">High</span>
+                    </li>
+                    <li class="weather-component">
+                        <span class="weather-component__title">Pressure</span>
+                        <span class="weather-component__content">1024 mbar</span>
+                    </li>
+                    <li class="weather-component">
+                        <span class="weather-component__title">Humidity</span>
+                        <span class="weather-component__content">79%</span>
+                    </li>
+                    <li class="weather-component">
+                        <span class="weather-component__title">Coordinates</span>
+                        <span class="weather-component__content">[48.72, 44.50]</span>
+                    </li>
+                </ul>
+            </li>
+
+
+            <li class="weather-container">
+                <div class="weather-container-header">
+                    <div class="weather-container-header-left">
+                        <h3>Khabarovsk</h3>
+                        <span class="loc-temp">17&degC</span>
+                    </div>
+                    <div class="weather-container-header-right">
+                        <img class="weather-icon" src="./res/sun.svg" alt="logo">
+                        <button class="button close-button">X</button>
+                    </div>
+                </div>
+
+                <ul>
+                    <li class="weather-component">
+                        <span class="weather-component__title">Wind</span>
+                        <span class="weather-component__content">9 km/h</span>
+                    </li>
+                    <li class="weather-component">
+                        <span class="weather-component__title">Cloudiness</span>
+                        <span class="weather-component__content">Low</span>
+                    </li>
+                    <li class="weather-component">
+                        <span class="weather-component__title">Pressure</span>
+                        <span class="weather-component__content">1016 mbar</span>
+                    </li>
+                    <li class="weather-component">
+                        <span class="weather-component__title">Humidity</span>
+                        <span class="weather-component__content">74%</span>
+                    </li>
+                    <li class="weather-component">
+                        <span class="weather-component__title">Coordinates</span>
+                        <span class="weather-component__content">[50.55, 137.00]</span>
+                    </li>
+                </ul>
+            </li>
+
+
+            <li class="weather-container">
+                <div class="weather-container-header">
+                    <div class="weather-container-header-left">
+                        <h3>Moscow</h3>
+                        <span class="loc-temp">0&degC</span>
+                    </div>
+                    <div class="weather-container-header-right">
+                        <img class="weather-icon" src="./res/cloudy.svg" alt="logo">
+                        <button class="button close-button">X</button>
+                    </div>
+                </div>
+
+                <ul>
+                    <li class="weather-component">
+                        <span class="weather-component__title">Wind</span>
+                        <span class="weather-component__content">10 km/h</span>
+                    </li>
+                    <li class="weather-component">
+                        <span class="weather-component__title">Cloudiness</span>
+                        <span class="weather-component__content">Medium</span>
+                    </li>
+                    <li class="weather-component">
+                        <span class="weather-component__title">Pressure</span>
+                        <span class="weather-component__content">1031 mbar</span>
+                    </li>
+                    <li class="weather-component">
+                        <span class="weather-component__title">Humidity</span>
+                        <span class="weather-component__content">78%</span>
+                    </li>
+                    <li class="weather-component">
+                        <span class="weather-component__title">Coordinates</span>
+                        <span class="weather-component__content">[55.75, 37.62]</span>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </main>
+</body>
+</html>
