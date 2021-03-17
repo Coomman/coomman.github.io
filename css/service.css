@@ -112,7 +112,14 @@ ul{
 
 
 .weather-icon{
-    width: 16%;
+    height: 100%;
+    width: 64px;
+    margin: auto;
+}
+
+.weather-icon img{
+    height: 100%;
+    width: 100%;
 }
 
 .cur-loc__image{

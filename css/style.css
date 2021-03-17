@@ -31,6 +31,8 @@ body{
     background: url("../res/rain.gif");
     background-repeat: no-repeat;
     background-size: cover;
+
+    min-height: 100vh;
 }
 
 section{

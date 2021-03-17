@@ -91,7 +91,12 @@
     width: 95%;
 }
 
-
+.weather-cur{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
 
 
 .favorites{
