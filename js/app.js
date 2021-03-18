@@ -6,28 +6,25 @@ let searchInput = document.getElementById("search-input");
 let searchForm = document.getElementById("search-form");
 
 document.getElementById("update-geo-button").addEventListener("click", () => {
-    geolocationApi.update().catch(() => {
-       alert("Geolocation error");
-   });
+  console.log("CLICK");
+  weatherCurrent.load();
 });
 
 searchForm.addEventListener("keydown", (event) => {
-    if (event.key === "Enter") {
-        searchEventHandler(event);
-    }
+  if (event.key === "Enter") {
+    searchEventHandler(event);
+  }
 });
 searchForm.addEventListener("submit", searchEventHandler);
 
+function searchEventHandler(event) {
+  event.preventDefault();
 
-function searchEventHandler(event){
-    event.preventDefault();
+  let city = searchInput.value;
+  searchInput.value = "";
 
-    let city = searchInput.value;
-    searchInput.value = "";
-
-    weatherFav.addCity(city);
+  weatherFav.addCity(city);
 }
 
-
 weatherCurrent.load();
-weatherFav.load(); 
+weatherFav.load();
