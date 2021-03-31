@@ -1,6 +1,5 @@
 import weatherCurrent from "./weather-current.js";
 import weatherFav from "./weather-favourite.js";
-import geolocationApi from "./geo-api.js";
 
 let searchInput = document.getElementById("search-input");
 let searchForm = document.getElementById("search-form");

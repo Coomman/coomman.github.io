@@ -1,6 +1,5 @@
 import geolocationApi from "./geo-api.js";
 import weatherAPI from "./weather-api.js";
-import weatherDto from "./weather-DTO.js";
 
 const weatherCurrent = {
   fill(weatherData) {
@@ -43,14 +42,19 @@ const weatherCurrent = {
 
       weatherAPI
         .getByLocation(longitude, latitude)
-        .then((res) => res.json())
-        .then((data) => {
-          this.fill(weatherDto.get(data));
+        .then((res) => res.json()).then((response) => {
+          let data = response.data
+          this.fill(data);
         })
         .catch((e) => {
-          console.log("ERROR");
-          alert(e);
+          if (error instanceof TypeError) {
+            alert("Network error");
+          } else {
+              alert(error);
+          }
         });
+    }).catch(() => {
+      alert("Geolocation ERROR");
     });
   },
 };

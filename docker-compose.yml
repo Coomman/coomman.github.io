@@ -1,0 +1,40 @@
+version: "3.8"
+
+services:
+    node:
+        container_name: "BACK"
+        build:
+            context: resources/docker/node
+        restart: on-failure
+        ports:
+            - 8222:3000
+        environment:
+            - NODE_ENV=dev
+        volumes:
+            - ./:/home/node/weather
+        networks:
+            - default
+        command: "npm start"
+
+    mysql:
+        container_name: "BASED"
+        image: mysql:5.7
+        restart: on-failure
+        environment:
+            MYSQL_ROOT_PASSWORD: rootroot
+        ports:
+            - 3222:3306
+        volumes:
+            - mysql:/var/lib/mysql
+        networks:
+            - default
+
+networks:
+    default:
+        ipam:
+            driver: default
+            config:
+                - subnet: 172.24.222.0/24
+
+volumes:
+    mysql:

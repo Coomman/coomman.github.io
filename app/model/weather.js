@@ -1,5 +1,5 @@
 const weatherDto = {
-    get(responseData) {
+    getWeather(responseData) {
         return {
             name: responseData.name,
             temperature: `${Math.round(responseData.main.temp)}°C`,
@@ -16,4 +16,4 @@ const weatherDto = {
     }
 };
 
-export default weatherDto; 
+module.exports = weatherDto;
