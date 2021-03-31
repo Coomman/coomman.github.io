@@ -5,7 +5,6 @@ let searchInput = document.getElementById("search-input");
 let searchForm = document.getElementById("search-form");
 
 document.getElementById("update-geo-button").addEventListener("click", () => {
-  console.log("CLICK");
   weatherCurrent.load();
 });
 

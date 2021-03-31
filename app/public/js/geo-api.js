@@ -1,5 +1,8 @@
-let longitude = "30.421811199999997";
-let latitude = "59.89662719999999";
+const default_longitude = "30.421811199999997";
+const default_latitude = "59.89662719999999";
+
+let longitude = default_longitude;
+let latitude = default_latitude;
 
 const geolocationApi = {
   update() {
@@ -11,8 +14,11 @@ const geolocationApi = {
           res();
         },
         () => {
-          longitude = "30.421811199999997";
-          latitude = "59.89662719999999";
+          alert("Give geolocation permission. Default geolocation will be loaded");
+
+          longitude = default_longitude;
+          latitude = default_latitude;
+
           res();
         }
       );
